@@ -42,6 +42,8 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const navMenuItems = document.querySelectorAll('nav a');
+// navMenuItems.style.color = 'green';
+
 
 const navMenuItem0 = navMenuItems[0].textContent = siteContent['nav']['nav-item-1'];
 const navMenuItem1 = navMenuItems[1].textContent = siteContent['nav']['nav-item-2'];
@@ -49,6 +51,10 @@ const navMenuItem2 = navMenuItems[2].textContent = siteContent['nav']['nav-item-
 const navMenuItem3 = navMenuItems[3].textContent = siteContent['nav']['nav-item-4'];
 const navMenuItem4 = navMenuItems[4].textContent = siteContent['nav']['nav-item-5'];
 const navMenuItem5 = navMenuItems[5].textContent = siteContent['nav']['nav-item-6'];
+
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => link.style.color = 'green');
+
 
 const ctaH1Text = document.querySelector('.cta-text h1');
 ctaH1Text.textContent = siteContent['cta']['h1'];
