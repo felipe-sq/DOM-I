@@ -84,3 +84,5 @@ const contactPText0 = contactPText[0].textContent = siteContent['contact']['addr
 const contactPText1 = contactPText[1].textContent = siteContent['contact']['phone'];
 const contactPText2 = contactPText[2].textContent = siteContent['contact']['email'];
 
+const footerText = document.querySelector('footer p');
+footerText.textContent = siteContent['footer']['copyright'];
