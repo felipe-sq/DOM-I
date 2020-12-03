@@ -50,8 +50,8 @@ const navMenuItem3 = navMenuItems[3].textContent = siteContent['nav']['nav-item-
 const navMenuItem4 = navMenuItems[4].textContent = siteContent['nav']['nav-item-5'];
 const navMenuItem5 = navMenuItems[5].textContent = siteContent['nav']['nav-item-6'];
 
-const ctaText = document.querySelector('.cta-text h1');
-ctaText.textContent = siteContent['cta']['h1'];
+const ctaH1Text = document.querySelector('.cta-text h1');
+ctaH1Text.textContent = siteContent['cta']['h1'];
 
 const ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent['cta']['button'];
@@ -59,6 +59,28 @@ ctaButton.textContent = siteContent['cta']['button'];
 const ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
+const mainH4Content = document.querySelectorAll('.text-content h4');
+const mainH4Content0 = mainH4Content[0].textContent = siteContent['main-content']['features-h4'];
+const mainH4Content1 = mainH4Content[1].textContent = siteContent['main-content']['about-h4'];
+const mainH4Content2 = mainH4Content[2].textContent = siteContent['main-content']['services-h4'];
+const mainH4Content3 = mainH4Content[3].textContent = siteContent['main-content']['product-h4'];
+const mainH4Content4 = mainH4Content[4].textContent = siteContent['main-content']['vision-h4'];
 
+const middleImg = document.getElementById('middle-img');
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
-console.log("Testing code in console. If you can see me, the code is not broken");
+const mainPContent = document.querySelectorAll('.text-content p');
+const mainPContent0 = mainPContent[0].textContent = siteContent['main-content']['features-content'];
+const mainPContent1 = mainPContent[1].textContent = siteContent['main-content']['about-content'];
+const mainPContent2 = mainPContent[2].textContent = siteContent['main-content']['services-content'];
+const mainPContent3 = mainPContent[3].textContent = siteContent['main-content']['product-content'];
+const mainPContent4 = mainPContent[4].textContent = siteContent['main-content']['vision-content'];
+
+const contactH4Text = document.querySelector('.contact h4');
+contactH4Text.textContent = siteContent['contact']['contact-h4'];
+
+const contactPText = document.querySelectorAll('.contact p');
+const contactPText0 = contactPText[0].textContent = siteContent['contact']['address'];
+const contactPText1 = contactPText[1].textContent = siteContent['contact']['phone'];
+const contactPText2 = contactPText[2].textContent = siteContent['contact']['email'];
+
