@@ -40,3 +40,23 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const navMenuItems = document.querySelectorAll('nav a');
+
+const navMenuItem0 = navMenuItems[0].textContent = siteContent['nav']['nav-item-1'];
+const navMenuItem1 = navMenuItems[1].textContent = siteContent['nav']['nav-item-2'];
+const navMenuItem2 = navMenuItems[2].textContent = siteContent['nav']['nav-item-3'];
+const navMenuItem3 = navMenuItems[3].textContent = siteContent['nav']['nav-item-4'];
+const navMenuItem4 = navMenuItems[4].textContent = siteContent['nav']['nav-item-5'];
+const navMenuItem5 = navMenuItems[5].textContent = siteContent['nav']['nav-item-6'];
+
+const ctaText = document.querySelector('.cta-text');
+const ctaH1Text = ctaText.textContent = siteContent['cta']['h1'];
+// needs more work -- can't get h1 to update //
+
+const ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+
+
+console.log("Testing code in console. If you can see me, the code is not broken");
