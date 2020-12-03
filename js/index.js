@@ -55,6 +55,18 @@ const navMenuItem5 = navMenuItems[5].textContent = siteContent['nav']['nav-item-
 const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach(link => link.style.color = 'green');
 
+const blogNavLink = document.createElement('a');
+blogNavLink.textContent = 'Blog';
+blogNavLink.href = '#';
+blogNavLink.style.color = 'green';
+document.querySelector('nav').appendChild(blogNavLink)
+
+const contestNavLink = document.createElement('a');
+contestNavLink.textContent = 'Contest!';
+contestNavLink.href = '#';
+contestNavLink.style.color = 'red';
+document.querySelector('nav').prepend(contestNavLink);
+
 
 const ctaH1Text = document.querySelector('.cta-text h1');
 ctaH1Text.textContent = siteContent['cta']['h1'];
