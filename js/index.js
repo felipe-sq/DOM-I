@@ -50,9 +50,11 @@ const navMenuItem3 = navMenuItems[3].textContent = siteContent['nav']['nav-item-
 const navMenuItem4 = navMenuItems[4].textContent = siteContent['nav']['nav-item-5'];
 const navMenuItem5 = navMenuItems[5].textContent = siteContent['nav']['nav-item-6'];
 
-const ctaText = document.querySelector('.cta-text');
-const ctaH1Text = ctaText.textContent = siteContent['cta']['h1'];
-// needs more work -- can't get h1 to update //
+const ctaText = document.querySelector('.cta-text h1');
+ctaText.textContent = siteContent['cta']['h1'];
+
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent['cta']['button'];
 
 const ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
