@@ -71,6 +71,9 @@ document.querySelector('nav').prepend(contestNavLink);
 const ctaH1Text = document.querySelector('.cta-text h1');
 ctaH1Text.textContent = siteContent['cta']['h1'];
 
+// const ctaH1Color = document.querySelector('')
+ctaH1Text.style.color = 'purple';
+
 const ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent['cta']['button'];
 
